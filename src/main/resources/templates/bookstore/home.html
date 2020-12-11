@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="common/css/initialization.css">
+    <script src="//at.alicdn.com/t/font_1953278_29zcjxa29ke.js"></script>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+            color: red;
+            font-size: 30px;
+            margin-left: 10px
+        }
+
+        .bt {
+            position: absolute;
+            right: 0;
+            width: 20%;
+            height: 100%;
+            border-width: 0; /* 边框宽度 */
+            border-radius: 20px; /* 边框半径 */
+            background: #1E90FF; /* 背景颜色 */
+            cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+            outline: none; /* 不显示轮廓线 */
+            color: white; /* 字体颜色 */
+            display: inline-block;
+        }
+
+        .search {
+            border: 2px solid #e0a800;
+            width: 100%;
+            height: 8%;
+            background-color: black;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .search_input {
+            width: 80%;
+            height: 100%;
+            position: absolute;
+            margin: 0 10px;
+        }
+
+        .center_layout {
+            padding: 40px;
+            border: aqua 3px solid;
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hot{
+            /*border: 2px solid #e0a800;*/
+            margin: 30px 0;
+        }
+
+        .classify {
+            border: 1px solid #de3d78;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .floor_box{
+            border: 2px #e0a800 solid;
+            width: 20%;
+            padding: 10px 15px;
+            background-color: #ebebeb;
+        }
+
+        .floor_box ul {
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+            align-items: flex-start;
+        }
+
+        .floor_box li {
+            width: 33.33333%;
+            /*margin: 5px 10px;*/
+            /*margin-right: 3%;*/
+        }
+
+        .title{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body style="width: 100%;height: 100%">
+<div class="center_layout">
+    <div class="search">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-sousuo"></use>
+        </svg>
+        <input class="search_input" type="search" placeholder="搜索条条">
+        <button class="bt">搜索</button>
+    </div>
+
+    <div class="hot">
+        <text>热门搜索：</text>
+        <text>市场经济</text>
+        <text>中国文学</text>
+        <text>经典文学</text>
+        <text>我的名字</text>
+    </div>
+
+    <div class="classify">
+        <div class="floor_box">
+            <h1 class="title">1 F</h1>
+            <ul>
+                <li>儿童文</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+            </ul>
+        </div>
+        <div class="floor_box">
+            <h1 class="title">2 F</h1>
+            <ul>
+                <li>儿童文</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+            </ul>
+        </div>
+        <div class="floor_box">
+            <h1 class="title">3 F</h1>
+            <ul>
+                <li>儿童文</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+                <li>儿童文学</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

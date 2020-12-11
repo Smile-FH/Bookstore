@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>书店前台首页</title>
+    <link rel="stylesheet" href="common/css/initialization.css">
+    <style>
+        .wah {
+            width: 100%;
+            height: 100%;
+        }
+
+        .shade {
+            position: absolute;
+            background-color: #333333;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.6;
+        }
+
+        .cent {
+            width: 60%;
+            height: 60%;
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            background: rgba( 255, 255, 255, .6);
+            border-radius: 30px;
+        }
+
+        .cent-title{
+            font-weight: bold;
+            font-size: 40px;
+            text-align: center;
+            margin: 40px 0;
+            letter-spacing: 15px;
+        }
+
+        .logo{
+            border: 2px solid yellow;
+            width: 180px;
+            height: 180px;
+            margin: 20px auto;
+        }
+        .bt{
+            width: 60%;
+            height: 40px;
+            border-width: 0; /* 边框宽度 */
+            border-radius: 20px; /* 边框半径 */
+            background: #1E90FF; /* 背景颜色 */
+            cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+            outline: none; /* 不显示轮廓线 */
+            color: white; /* 字体颜色 */
+        }
+    </style>
+</head>
+<body>
+<div class="wah">
+    <!--    这里会出现一问题，如果图片的像素不是正好的1080P该怎么办呢？-->
+    <img th:src="@{/bookstore/images/11725.jpg}" class="wah">
+</div>
+<div class="cent">
+    <div class="logo">logo</div>
+    <div class="cent-title">
+        欢迎来到三月书屋
+    </div>
+    <div style="text-align: center;">
+        <a href="/home">
+            <button class="bt">进入查询</button>
+        </a>
+    </div>
+</div>
+<div class="shade"></div>
+</body>
+</html>
